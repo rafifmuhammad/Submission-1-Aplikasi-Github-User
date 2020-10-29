@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="140dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        app:civ_border_color="#99a3a1"
+        app:civ_border_width="2dp"
+        android:src="#717876"/>
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_user"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_username"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/username_user"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/flw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/follower"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/txt_user_follower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/flw"
+            android:text="@string/flw"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/flwing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/following"
+            android:layout_toRightOf="@+id/txt_user_follower"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/txt_user_following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/flwing"
+            android:text="@string/flwing"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:src="#aba7a7"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="@string/repository"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_repository"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/repository"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="@string/company"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/company"
+        android:textSize="14sp"/>
+</LinearLayout>
